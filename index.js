@@ -1,8 +1,7 @@
 
 
 const deck_id = "luvcg5u95nk7";
-const deckUrl =  'https://deckofcardsapi.com/api/deck/new/shuffle/'
-//const cardUrl =   `https://deckofcardsapi.com/api/deck/${deck_id}/draw/`
+const deckUrl =  'https://deckofcardsapi.com/api/deck/new/shuffle/';
 const cardsContainer = document.getElementById("cards");
 let image = "https://deckofcardsapi.com/static/img/QS.svg"
 let card = "https://deckofcardsapi.com/static/img/QS.png"
@@ -21,13 +20,14 @@ btn.addEventListener('click', function() {
 const count = 1; // number of cards to draw
 fetch(`https://deckofcardsapi.com/api/deck/${deck_id}/draw/?count=${count}`)
     .then(res => res.json())
-    .then(data => console.log(data));; 
-      
-    cardsContainer.innerText += `<img src="${'https://deckofcardsapi.com/static/img/QS.png'}">`
+    .then(data => console.log(data));
+        
+  
+    cardsContainer.innerText += image
       
       
 
-}) 
+}); 
   
 
 Form.addEventListener('submit', (e) => {

@@ -1,9 +1,20 @@
 form {
-    text-align: center;
+    text-align: ;
     text-shadow: 0cqb;
-    color: rgb(16, 241, 76);
+    color: rgba(43, 244, 97, 0.622);
+    box-shadow: #000;
+    border-radius: 8px;
+    text-decoration: wavy;
   }
   input {
     background-color: burlywood;
     color: #000;
+  }
+  body {
+    background: url("https://png.pngtree.com/thumb_back/fh260/background/20200528/pngtree-gaming-black-gold-playing-cards-background-image_336962.jpg") no-repeat center center fixed;
+    background-size: cover;
+  }  
+  button {
+    color: darkgoldenrod;
+    border-radius: 5px;
   }
