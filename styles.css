@@ -1,9 +1,9 @@
 form {
     text-align: center;
-    text-shadow: 0cm;
-    color: darkorange;
-}
-input {
+    text-shadow: 0cqb;
+    color: rgb(16, 241, 76);
+  }
+  input {
     background-color: burlywood;
-    color: black;
-}
+    color: #000;
+  }
