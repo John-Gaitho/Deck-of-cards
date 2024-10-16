@@ -23,10 +23,15 @@ fetch(deckUrl)
       .then(res => res.json())
       .then(data => console.log(data));; 
       
-      cardsContainer.innerText += `<img src="${card.image}">`
+      cardsContainer.innerText += `<img src="${'https://deckofcardsapi.com/static/img/QS.png'}">`
       
       
 
   }) 
   
+
+  document.getElementById('age').addEventListener('submit', (e) => {
+    e.preventDefault().value;
+  })
+
 });
