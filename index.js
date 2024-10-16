@@ -10,28 +10,32 @@ document.addEventListener("DOMContentLoaded",() => {
 
 fetch(deckUrl)
   .then(response => response.json())
-  //.then(data => console.log(data));
   
-  fetch(`https://deckofcardsapi.com/api/deck/${deck_id}/draw/`)
+fetch(`https://deckofcardsapi.com/api/deck/${deck_id}/draw/`)
     .then(response => response.json())
-    //.then(data => console.log(data));  
-    //let deckid = deck_id;
-  let btn = document.getElementById('button');
-  btn.addEventListener('click', function() {
-    const count = 1; // number of cards to draw
-    fetch(`https://deckofcardsapi.com/api/deck/${deck_id}/draw/?count=${count}`)
-      .then(res => res.json())
-      .then(data => console.log(data));; 
       
-      cardsContainer.innerText += `<img src="${'https://deckofcardsapi.com/static/img/QS.png'}">`
+    
+let btn = document.getElementById('button');
+
+btn.addEventListener('click', function() {
+const count = 1; // number of cards to draw
+fetch(`https://deckofcardsapi.com/api/deck/${deck_id}/draw/?count=${count}`)
+    .then(res => res.json())
+    .then(data => console.log(data));; 
+      
+    cardsContainer.innerText += `<img src="${'https://deckofcardsapi.com/static/img/QS.png'}">`
       
       
 
-  }) 
+}) 
   
 
-  document.getElementById('age').addEventListener('submit', (e) => {
-    e.preventDefault().value;
-  })
+Form.addEventListener('submit', (e) => {
+  let messages = []
+  if(submit.value === 'No') {
+    messages.push('Sorry, you cant play!')
+  } else ('Welcome player')
+  e.preventDefault()
+});
 
 });
