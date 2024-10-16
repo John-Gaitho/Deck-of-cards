@@ -16,7 +16,10 @@ const deck_id = "8fdxs9viczhm"
 
 let btn = document.getElementById('button');
 btn.addEventListener('click', function() {
-
+  const count = 1; // number of cards to draw
+  fetch(`https://deckofcardsapi.com/api/deck/${deck_id}/draw/?count=${count}`)
+    .then(res => res.json())
+    .then(data => console.log(data)); 
 
 
 }
