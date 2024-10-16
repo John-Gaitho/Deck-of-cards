@@ -1,6 +1,7 @@
 
 const deckUrl =  'https://deckofcardsapi.com/api/deck/new/shuffle/';
 
+document.addEventListener("DOMContentLoaded",() => {
 fetch(deckUrl)
   .then(response => response.json())
   
@@ -11,4 +12,7 @@ fetch(deckUrl)
   fetch(`https://deckofcardsapi.com/api/deck/${deck_id}/draw/`)
   .then(response => response.json())
   .then(data => console.log(data));  
-  let deckid = deck_id; 
+  
+
+
+});
