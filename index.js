@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded",() => {
     });
 }
 document.getElementById('createDeck').addEventListener('click', createDeck); //this are listening to clicks and perfoming that fuction
+document.getElementById('shuffleDeck').addEventListener('click', shuffleDeck);
+document.getElementById('drawCards').addEventListener('click', drawCards);
 
 
 
