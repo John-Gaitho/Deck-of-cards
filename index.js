@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded",() => {
     const response = await fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1');
     const data = await response.json();
     deckId = data.deck_id;
-      document.getElementById('shuffleDeck').disabled = false;
+      document.getElementById('shuffleDeck').disabled = false; // to disable or enable buttons.
       document.getElementById('drawCards').disabled = false;
     alert('Deck created!');
   }
@@ -35,6 +35,12 @@ document.addEventListener("DOMContentLoaded",() => {
         cardsContainer.appendChild(cardImg);
     });
 }
+document.getElementById('createDeck').addEventListener('click', createDeck); //this are listening to clicks and perfoming that fuction
+
+
+
+
+
 
 });
 
