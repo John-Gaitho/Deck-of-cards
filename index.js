@@ -39,7 +39,15 @@ document.getElementById('createDeck').addEventListener('click', createDeck); //t
 document.getElementById('shuffleDeck').addEventListener('click', shuffleDeck);
 document.getElementById('drawCards').addEventListener('click', drawCards);
 
+var form = document.getElementById('form');
 
+form.addEventListener('submit', function (e){
+  e.preventDefault() // to prevent auto submit
+
+  var age = document.getElementById('age').value;
+  value.remove();
+  console.log(age);
+})
 
 
 
