@@ -1,8 +1,23 @@
 
 async function createDeck() {
   const response = await fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1');
-  const deckDetails = await response.json();
-  console.log(deckDetails);
+  const data = await response.json();
+  deckId = data.deck_id;
+    document.getElementById('shuffleDeck').disabled = false;
+    document.getElementById('drawCards').disabled = false;
+  alert('Deck created! Deck ID: ' + deckId);
+}
+async function shuffleDeck() {
+  await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/shuffle/`);
+  alert('Deck shuffled!');
+}
+
+async function drawCards() {
+  const count = document.getElementById('cardCount').value;
+  const response = await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/${count}/`);
+  const data = await response.json();
+
+  displayCards(data.cards);
 }
 createDeck();
 
