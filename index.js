@@ -19,7 +19,23 @@ async function drawCards() {
 
   displayCards(data.cards);
 }
-createDeck();
+function displayCards() {
+  const cardsContainer = document.getElementById('cards');
+  cardsContainer.innerHTML = "
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*const deckUrl =  'https://deckofcardsapi.com/api/deck/new/shuffle/';
 const cardsContainer = document.getElementById("card");
