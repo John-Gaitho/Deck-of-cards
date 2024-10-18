@@ -1,6 +1,8 @@
 
-HOW TO USE
+HOW TO USE;
+
 Requirements
+
  -A computer, tablet or phone
  -Access to the internet
  -View Live Site
@@ -19,20 +21,22 @@ Run Locally
 To run this app locally, you need a PC with the following:
 
 Access to the internet
+
 Installation Process
 Clone this repository using
 
-  git clone git@github.com:John-Gaitho/Deck-of-cards.git
+git@github.com:John-Gaitho/Deck-of-cards.git
+ 
 or by downloading a ZIP file of the code.
 
 The repository, if downloaded as a .zip file will need to be extracted to your preferred location and opened
 
 Open the index.html file in your preferred browser.
 
-Technologies Used
-HTML
-CSS
-JS
+Technologies Used:
+   -HTML
+   -CSS
+   -JS
 
 Support and Contact Details
 Incase of any query, need for collaboration or issues with this code, feel free to reach me at jgaitho@gmail.com
