@@ -1,5 +1,7 @@
-# Description.
- Hello There this is a Card Game, built using HTML, CSS and JavaScript, where player can play Deck.
+
+# DECK OF CARDS GAME.
+## Description.
+ Hello There this is a Card Game, built using HTML, CSS and JavaScript by JOHN- GAITHO.
  
 <img src="https://png.pngtree.com/thumb_back/fh260/background/20200528/pngtree-gaming-black-gold-playing-cards-background-image_336962.jpg">
 
