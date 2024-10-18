@@ -1,13 +1,14 @@
-
-# HOW TO USE
+# Description
+ Hello There this is a Card Game, built using HTML, CSS and JavaScript, where player can play Deck.
+# HOW TO USE;
 <img src="https://png.pngtree.com/thumb_back/fh260/background/20200528/pngtree-gaming-black-gold-playing-cards-background-image_336962.jpg">
 
 ## Requirements
 
- -A computer, tablet or phone
- -Access to the internet
- -View Live Site
- -Ensure that your device of choice has a browser installed. Click the link provided below to view the site.
+ - A computer, tablet or phone
+ - Access to the internet
+ - View Live Site
+ - Ensure that your device of choice has a browser installed. Click the link provided below to view the site.
 
 https://john-gaitho.github.io/Deck-of-cards/
 
@@ -17,7 +18,7 @@ https://john-gaitho.github.io/Deck-of-cards/
 
  - Play the game by clicking a Draw-card button to pull a card,
      and also shuffle the cards at will.
-## RUN LOCALLY
+### RUN LOCALLY
   Setup/Installation Requirements
 To run this app locally, you need a PC with the following:
 
