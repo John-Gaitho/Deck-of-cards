@@ -9,43 +9,48 @@ document.addEventListener("DOMContentLoaded",() => {
     deckId = data.deck_id;
       document.getElementById('shuffleDeck').disabled = false; // to disable or enable buttons.
       document.getElementById('drawCards').disabled = false;
-    alert('Deck created!');
+      alert('Deck created!');
   }
   async function shuffleDeck() {
-    await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/shuffle/`);
-    alert('Deck shuffled!');
+      await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/shuffle/`);
+      alert('Deck shuffled!');
   }
   
-  async function drawCards() {
-    const count = document.getElementById('cardCount').value; // this allow the player to choose num of cards to pull.
-    const response = await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/${count}/`);
-    const data = await response.json();
+async function drawCards() {
+      const count = document.getElementById('cardCount').value; // this allow the player to choose num of cards to pull.
+      const response = await fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/${count}/`);
+      const data = await response.json();
   
-    displayCards(data.cards); // the json data and, the cards array in server.
+  displayCards(data.cards); // the json data and, the cards array in server.
+    
   }
-  function displayCards(cards) {
-    const cardsContainer = document.getElementById('cards'); // the div container in html file.
-    cardsContainer.innerHTML = ''; // Clear previous cards.
+function displayCards(cards) {
+      const cardsContainer = document.getElementById('cards'); // the div container in html file.
+      cardsContainer.innerHTML = ''; // Clear previous cards.
 
-    cards.forEach(card => {
-        const cardImg = document.createElement('img');
-        cardImg.src = card.image;
-        cardImg.alt = `${card.value} of ${card.suit}`;
-        cardImg.className = 'card';
-        cardsContainer.appendChild(cardImg);
+cards.forEach(card => {
+      const cardImg = document.createElement('img');
+      cardImg.src = card.image;
+      cardImg.alt = `${card.value} of ${card.suit}`;
+      cardImg.className = 'card';
+      cardsContainer.appendChild(cardImg);
+
+        if(card === "KING" || card === "QUEEN" || card === "ACE") {
+          alert('You Win!')
+        }
+
     });
 }
-document.getElementById('createDeck').addEventListener('click', createDeck); //this are listening to clicks and perfoming that fuction
+document.getElementById('createDeck').addEventListener('click', createDeck); //this are listening to clicks and perfoming that particular fuction.
 document.getElementById('shuffleDeck').addEventListener('click', shuffleDeck);
 document.getElementById('drawCards').addEventListener('click', drawCards);
 
 var form = document.getElementById('form');
 
 form.addEventListener('submit', function (e){
-  e.preventDefault() // to prevent auto submit
+  e.preventDefault() // to prevent auto submit.
 
-  var age = document.getElementById('age').value;
-  value.remove();
+  var age = document.getElementById('age').value
   console.log(age);
 })
 
