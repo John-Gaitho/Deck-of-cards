@@ -14,9 +14,9 @@ Using the App
  The user can navigate the Game app easily and be able to:
 
 
- -A player is able to play the game by clicking a Draw
-   card button and also shuffle the cards at will.
-Run Locally
+ - Play the game by clicking a Draw-card button to pull a card,
+     and also shuffle the cards at will.
+RUN LOCALLY
   Setup/Installation Requirements
 To run this app locally, you need a PC with the following:
 
@@ -25,7 +25,7 @@ Access to the internet
 Installation Process
 Clone this repository using
 
-git@github.com:John-Gaitho/Deck-of-cards.git
+'git@github.com:John-Gaitho/Deck-of-cards.git'
  
 or by downloading a ZIP file of the code.
 
