@@ -1,6 +1,6 @@
-# Description
+# Description.
  Hello There this is a Card Game, built using HTML, CSS and JavaScript, where player can play Deck.
-# HOW TO USE;
+ 
 <img src="https://png.pngtree.com/thumb_back/fh260/background/20200528/pngtree-gaming-black-gold-playing-cards-background-image_336962.jpg">
 
 ## Requirements
